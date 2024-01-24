@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Booking</title>
+    <!-- <link rel="stylesheet" href="expenseTracker.css"> -->
+</head>
+<body>
+    <h2 style="text-align: center;">Bus Booking</h2>
+
+    <form action="#" onsubmit="onsignup(event)">
+
+    <label for="name">Name</label>
+    <input type="text" id="name">
+
+    <label for="email">Email</label>
+    <input type="text" id="email">
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone">
+    
+    <label for="bus">Bus Number</label>
+        <select id="bus">
+            <option>Bus 1</option>
+            <option>Bus 2</option>
+            <option>Bus 3</option>
+        </select>
+
+    <input type="submit" value="Book">
+    
+</form>
+<div>
+    <form onsubmit="datashow(event)">
+        <label for="datashowno">Filter:</label>
+        <select name="datashowno" id="datashowno">
+            <option value="All">All</option>
+            <option value="Bus 1">Bus 1</option>
+            <option value="Bus 2">Bus 2</option>
+            <option value="Bus 3">Bus 3</option>
+        </select>
+        <button id="dataShowbtn">Submit</button>
+        
+    </form>
+</div>
+
+<ul id="listOnScreen">
+
+</ul>
+</body>
+<script src="./busBooking.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js"></script>
+</html>
