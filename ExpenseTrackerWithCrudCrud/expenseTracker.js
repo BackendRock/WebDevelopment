@@ -21,6 +21,7 @@ function onsignup(event) {
             .catch((err) => {
                 console.error(err);
             })
+            window.location.reload()
         // onScreenFunction(myObj);
     } else {
         alert('Enter All the things please');
